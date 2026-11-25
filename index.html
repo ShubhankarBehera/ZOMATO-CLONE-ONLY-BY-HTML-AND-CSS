@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Clone - Discover the Best Food & Drinks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="nav-left">
+          <a href="#app" class="nav-link get-app-link">
+            <svg class="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+            Get the App
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">Investor Relations</a></li>
+          <li><a href="#" class="nav-link">Add restaurant</a></li>
+          <li><a href="#" class="nav-link">Log in</a></li>
+          <li><a href="#" class="nav-link">Sign up</a></li>
+        </ul>
+      </nav>
+
+      <!-- Center Logo & Search -->
+      <div class="hero-center">
+        <h1 class="brand-logo">zomato</h1>
+        <p class="hero-tagline">Discover the best food & drinks in <span>Bengaluru</span></p>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+          <!-- Location Picker -->
+          <div class="search-location">
+            <svg class="search-icon icon-pin" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <input type="text" class="location-input" value="Bengaluru" placeholder="Enter city or locality">
+            <svg class="icon-caret" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </div>
+
+          <div class="search-divider"></div>
+
+          <!-- Restaurant / Food Search -->
+          <div class="search-food">
+            <svg class="search-icon icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="food-input" placeholder="Search for restaurant, cuisine or a dish">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <!-- 1. FEATURE ORDER CARDS -->
+    <section class="feature-cards">
+      <!-- Card 1 -->
+      <article class="feature-card">
+        <div class="feature-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Order Online" class="feature-img">
+        </div>
+        <div class="feature-info">
+          <h3>Order Online</h3>
+          <p>Stay home and order to your doorstep</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="feature-card">
+        <div class="feature-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="Dining" class="feature-img">
+        </div>
+        <div class="feature-info">
+          <h3>Dining</h3>
+          <p>View the city's favourite dining venues</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="feature-card">
+        <div class="feature-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=700&q=80" alt="Live Events" class="feature-img">
+        </div>
+        <div class="feature-info">
+          <h3>Live Events</h3>
+          <p>Discover India's best events & concerts</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 2. COLLECTIONS SECTION -->
+    <section class="collections-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Collections</h2>
+          <p class="section-subtitle">Explore curated lists of top restaurants, cafes, pubs, and bars in Bengaluru, based on trends</p>
+        </div>
+        <a href="#" class="see-all-link">
+          All collections in Bengaluru
+          <svg viewBox="0 0 24 24" fill="currentColor" class="icon-inline">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="collections-grid">
+        <!-- Collection 1 -->
+        <div class="collection-card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Top Trending Spots" class="collection-img">
+          <div class="collection-overlay">
+            <h4>Top Trending Spots</h4>
+            <p>32 Places <span>▸</span></p>
+          </div>
+        </div>
+
+        <!-- Collection 2 -->
+        <div class="collection-card">
+          <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=600&q=80" alt="Best Rooftop Places" class="collection-img">
+          <div class="collection-overlay">
+            <h4>Best Rooftop Places</h4>
+            <p>28 Places <span>▸</span></p>
+          </div>
+        </div>
+
+        <!-- Collection 3 -->
+        <div class="collection-card">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Newly Opened Eateries" class="collection-img">
+          <div class="collection-overlay">
+            <h4>Newly Opened Eateries</h4>
+            <p>19 Places <span>▸</span></p>
+          </div>
+        </div>
+
+        <!-- Collection 4 -->
+        <div class="collection-card">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80" alt="Authentic Local Flavours" class="collection-img">
+          <div class="collection-overlay">
+            <h4>Authentic Flavours</h4>
+            <p>24 Places <span>▸</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. POPULAR LOCALITIES -->
+    <section class="localities-section">
+      <h2 class="section-title">Popular localities in and around <span>Bengaluru</span></h2>
+      <div class="localities-grid">
+        <!-- Locality Item -->
+        <a href="#" class="locality-card">
+          <div class="locality-text">
+            <h5>Indiranagar</h5>
+            <span>485 places</span>
+          </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" class="locality-arrow"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </a>
+
+        <a href="#" class="locality-card">
+          <div class="locality-text">
+            <h5>Koramangala</h5>
+            <span>722 places</span>
+          </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" class="locality-arrow"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </a>
+
+        <a href="#" class="locality-card">
+          <div class="locality-text">
+            <h5>MG Road</h5>
+            <span>192 places</span>
+          </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" class="locality-arrow"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </a>
+
+        <a href="#" class="locality-card">
+          <div class="locality-text">
+            <h5>Whitefield</h5>
+            <span>812 places</span>
+          </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" class="locality-arrow"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </a>
+
+        <a href="#" class="locality-card">
+          <div class="locality-text">
+            <h5>HSR Layout</h5>
+            <span>634 places</span>
+          </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" class="locality-arrow"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </a>
+
+        <a href="#" class="locality-card">
+          <div class="locality-text">
+            <h5>Jayanagar</h5>
+            <span>418 places</span>
+          </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" class="locality-arrow"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </a>
+
+        <a href="#" class="locality-card">
+          <div class="locality-text">
+            <h5>JP Nagar</h5>
+            <span>520 places</span>
+          </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" class="locality-arrow"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </a>
+
+        <a href="#" class="locality-card">
+          <div class="locality-text">
+            <h5>Sarjapur Road</h5>
+            <span>561 places</span>
+          </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" class="locality-arrow"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </a>
+
+        <a href="#" class="locality-card see-more">
+          <div class="locality-text">
+            <h5>see more</h5>
+          </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" class="locality-arrow"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. GET THE APP BANNER SECTION -->
+  <section id="app" class="app-banner-section">
+    <div class="container app-banner-wrapper">
+      <div class="app-banner-phone">
+        <div class="mockup-frame">
+          <div class="mockup-screen">
+            <div class="screen-header">
+              <span class="screen-brand">zomato</span>
+            </div>
+            <div class="screen-dish">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=350&q=80" alt="Juicy Burger App View">
+            </div>
+            <div class="screen-caption">Fastest Delivery to your door 🚀</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-banner-content">
+        <h2>Get the Zomato App</h2>
+        <p class="app-subtext">We will send you a link, open it on your phone to download the app</p>
+
+        <!-- Pure CSS Radio Buttons -->
+        <form class="app-form" onsubmit="return false;">
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="contact-method" value="email" checked>
+              <span class="custom-radio"></span>
+              Email
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="contact-method" value="phone">
+              <span class="custom-radio"></span>
+              Phone
+            </label>
+          </div>
+
+          <div class="input-btn-group">
+            <input type="text" placeholder="Email" class="app-input">
+            <button type="submit" class="btn-share">Share App Link</button>
+          </div>
+        </form>
+
+        <p class="download-text">Download app from</p>
+        <div class="app-store-badges">
+          <a href="#" class="store-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="badge-icon">
+              <path d="M3.609 1.814L13.792 12 3.61 22.186c-.19.19-.344.135-.344-.134V1.948c0-.269.155-.324.344-.134zM14.5 12.707l2.879 2.879-11.83 6.83 8.951-9.709zm2.879-4.293L14.5 11.293 5.549 1.584l11.83 6.83zm.707.707l3.633 2.1c.774.448.774 1.176 0 1.624l-3.633 2.1-2.414-2.414 2.414-2.41z"/>
+            </svg>
+            <div>
+              <span class="small-text">GET IT ON</span>
+              <span class="large-text">Google Play</span>
+            </div>
+          </a>
+          <a href="#" class="store-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="badge-icon">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.47c.61-.75 1.04-1.8 1.01-2.87-.96.04-2.09.65-2.73 1.4-.56.64-.99 1.7-1.01 2.76 1.07.08 2.12-.54 2.73-1.29z"/>
+            </svg>
+            <div>
+              <span class="small-text">Download on the</span>
+              <span class="large-text">App Store</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. EXPLORE OPTIONS NEAR ME (PURE CSS ACCORDION) -->
+  <section class="container explore-section">
+    <h2 class="section-title">Explore options near me</h2>
+
+    <div class="faq-accordion">
+      <details class="accordion-item" open>
+        <summary class="accordion-header">
+          <span>Popular Cuisines Near Me</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </summary>
+        <div class="accordion-body">
+          <p>Bakery food near me • Beverages food near me • Biryani food near me • Burger food near me • Chinese food near me • Coffee food near me • Continental food near me • Desserts food near me • Italian food near me • Mithai food near me • Momos food near me • North Indian food near me • Pizza food near me • Shake food near me • South Indian food near me • Street food near me</p>
+        </div>
+      </details>
+
+      <details class="accordion-item">
+        <summary class="accordion-header">
+          <span>Popular Restaurant Types Near Me</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </summary>
+        <div class="accordion-body">
+          <p>Bakeries near me • Bars near me • Beverage Shops near me • Bhojanalya near me • Cafés near me • Casual Dining near me • Dessert Parlors near me • Dhabas near me • Fine Dining near me • Food Courts near me • Food Trucks near me • Kiosks near me • Lounges near me • Microbreweries near me • Pubs near me • Quick Bites near me</p>
+        </div>
+      </details>
+
+      <details class="accordion-item">
+        <summary class="accordion-header">
+          <span>Top Restaurant Chains</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </summary>
+        <div class="accordion-body">
+          <p class="tag-list">
+            <span>Bikanervala</span>
+            <span>Burger King</span>
+            <span>Domino's</span>
+            <span>Dunkin' Donuts</span>
+            <span>Haldiram's</span>
+            <span>KFC</span>
+            <span>McDonald's</span>
+            <span>Paradise Biryani</span>
+            <span>Pizza Hut</span>
+            <span>Subway</span>
+            <span>WOW! Momo</span>
+          </p>
+        </div>
+      </details>
+
+      <details class="accordion-item">
+        <summary class="accordion-header">
+          <span>Cities We Deliver To</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </summary>
+        <div class="accordion-body">
+          <p>Delhi NCR • Kolkata • Mumbai • Bengaluru • Pune • Hyderabad • Chennai • Lucknow • Kochi • Jaipur • Ahmedabad • Chandigarh • Goa • Indore • Nashik • Ooty • Shimla • Ludhiana • Guwahati • Amritsar • Kanpur • Varanasi • Dehradun • Patna</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 6. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">zomato</div>
+        <div class="footer-selectors">
+          <div class="selector-box">
+            <span>🇮🇳 India</span>
+            <svg viewBox="0 0 24 24" fill="currentColor" class="selector-caret"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+          <div class="selector-box">
+            <span>🌐 English</span>
+            <svg viewBox="0 0 24 24" fill="currentColor" class="selector-caret"><path d="M7 10l5 5 5-5z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h6>ABOUT ZOMATO</h6>
+          <ul>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Work With Us</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Report Fraud</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h6>ZOMAVERSE</h6>
+          <ul>
+            <li><a href="#">Zomato</a></li>
+            <li><a href="#">Blinkit</a></li>
+            <li><a href="#">Feeding India</a></li>
+            <li><a href="#">Hyperpure</a></li>
+            <li><a href="#">Zomato Live</a></li>
+            <li><a href="#">Zomaland</a></li>
+            <li><a href="#">Weather Union</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h6>FOR RESTAURANTS</h6>
+          <ul>
+            <li><a href="#">Partner With Us</a></li>
+            <li><a href="#">Apps For You</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h6>LEARN MORE</h6>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h6>SOCIAL LINKS</h6>
+          <div class="social-icons">
+            <a href="#" class="social-circle" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-circle" aria-label="Instagram">ig</a>
+            <a href="#" class="social-circle" aria-label="Twitter">X</a>
+            <a href="#" class="social-circle" aria-label="YouTube">yt</a>
+            <a href="#" class="social-circle" aria-label="Facebook">fb</a>
+          </div>
+          <div class="footer-store-buttons">
+            <a href="#" class="footer-badge">
+              <span class="badge-mini">App Store</span>
+            </a>
+            <a href="#" class="footer-badge">
+              <span class="badge-mini">Google Play</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2026 © Zomato™ Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
